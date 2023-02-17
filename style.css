@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.area-login {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(50deg, #fd4829, #e73827);
+    background-size: 300%;
+    animation: fundoAnimado 8s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fundoAnimado {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+
+}
+
+.card-login {
+    height: 600px;
+    width: 350px;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+}
+
+.login-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.inputs-nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-inputs {
+    width: 100%;
+}
+
+.login-inputs input {
+    outline: none;
+    width: 90%;
+}
+
+.card-login-icone img {
+    height: 100px;
+    width: 100px;
+}
+
+.inputs-nome {
+    margin: 20px 0px;
+}
+
+.card-login button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, red, brown);
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.card-login button:hover {
+    background-image: linear-gradient(to right, rgb(252, 22, 22), rgb(177, 52, 52));
+}
+
+.card-login input {
+    width: 330px;
+    padding: 5px 0px;
+}
